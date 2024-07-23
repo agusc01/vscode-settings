@@ -1,0 +1,274 @@
+// Place your key bindings in this file to override the defaults
+[
+	// #region // * Jump
+	{
+		"key": "alt+m",
+		"command": "editor.action.jumpToBracket"
+	},
+	// #endregion
+
+	// #region // * Duplicate selection
+	{
+		"key": "alt+d",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	// #endregion
+
+	// #region // * sidebar
+	{
+		"command": "workbench.action.toggleSidebarVisibility",
+		"key": "ctrl+b"
+	},
+	{
+		"command": "workbench.files.action.focusFilesExplorer",
+		"key": "ctrl+b",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "workbench.action.focusNextPart",
+		"key": "ctrl+l",
+		"when": "filesExplorerFocus"
+	},
+	{
+		"command": "workbench.action.findInFiles",
+		"key": "alt+f"
+	},
+	// ! Really dangerous
+	// {
+	// 	"command": "workbench.action.replaceInFiles",
+	// 	"key": "alt+h"
+	// },
+	{
+		"command": "editor.action.inPlaceReplace.down",
+		"key": "alt+t"
+	},
+	{
+		"command": "explorer.newFile",
+		"key": "a",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "explorer.newFolder",
+		"key": "f",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "renameFile",
+		"key": "r",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "filesExplorer.copy",
+		"key": "c",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "filesExplorer.paste",
+		"key": "p",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "deleteFile",
+		"key": "d",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	// #endregion
+
+	// #region // * terminal
+	{
+		"command": "workbench.action.terminal.split",
+		"key": "alt+o",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+	},
+	{
+		"command": "workbench.action.terminal.splitActiveTab",
+		"key": "alt+o",
+		"when": "terminalProcessSupported && terminalTabsFocus"
+	},
+	{
+		"command": "workbench.action.terminal.focusPreviousPane",
+		"key": "alt+j",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+	},
+	{
+		"command": "workbench.action.terminal.focusNextPane",
+		"key": "alt+k",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+	},
+	{
+		"command": "workbench.action.terminal.new",
+		"key": "ctrl+o",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+	},
+	{
+		"command": "workbench.action.terminal.focusPrevious",
+		"key": "ctrl+j",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+	},
+	{
+		"command": "workbench.action.terminal.focusNext",
+		"key": "ctrl+k",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+	},
+	{
+		"command": "workbench.action.focusActiveEditorGroup",
+		"key": "alt+h",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile || filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "workbench.action.focusActiveEditorGroup",
+		"key": "ctrl+h",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile || filesExplorerFocus && !inputFocus"
+	},
+	// #endregion
+
+	// #region // * Transform Text
+	{
+		"key": "alt+k alt+c",
+		"command": "editor.action.transformToCamelcase",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+k alt+u",
+		"COMMAND": "editor.action.transformToUppercase",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+k alt+l",
+		"command": "editor.action.transformToLowercase",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+k alt+s",
+		"command": "editor.action.transformToSnakecase",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+k alt+t",
+		"command": "editor.action.transformToTitlecase",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+k alt+k",
+		"command": "editor.action.transformToKebabcase",
+		"when": "editorTextFocus"
+	},
+	// #endregion
+
+	// #region // * tabs
+	{
+		"command": "workbench.action.moveEditorToPreviousGroup",
+		"key": "ctrl+u",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "workbench.action.moveEditorToNextGroup",
+		"key": "ctrl+i",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "workbench.action.focusPreviousGroup",
+		"key": "ctrl+h",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "workbench.action.focusNextGroup",
+		"key": "ctrl+l",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+		"key": "ctrl+j",
+		"when": "editorTextFocus && !activeEditorGroupEmpty"
+	},
+	{
+		"command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+		"key": "ctrl+j",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+		"command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+		"key": "ctrl+k",
+		"when": "editorTextFocus && !activeEditorGroupEmpty"
+	},
+	{
+		"command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+		"key": "ctrl+k",
+		"when": "inEditorsPicker && inQuickOpen"
+	}
+	// #endregion
+
+	// // #region // * move text
+	// {
+	//     "command": "editor.action.moveLinesDownAction",
+	// 	"key": "ctrl+alt+j",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	// 	"command": "editor.action.moveLinesUpAction",
+	// 	"key": "ctrl+alt+k",
+	// 	"when": "editorTextFocus"
+	// },
+	// // #endregion
+
+	// // #region // * moves
+	// {
+	//     "command": "cursorDown",
+	// 	"key": "alt+j",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	//     "command": "cursorUp",
+	// 	"key": "alt+k",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	//     "command": "cursorLeft",
+	// 	"key": "alt+h",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	//     "command": "cursorRight",
+	// 	"key": "alt+l",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	//     "command": "cursorLineEnd",
+	// 	"key": "alt+4",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	//     "command": "cursorLineStart",
+	// 	"key": "alt+0",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	//     "command": "cursorWordRight",
+	// 	"key": "alt+w",
+	// 	"when": "editorTextFocus"
+	// },
+	// {
+	//     "command": "cursorWordLeft",
+	// 	"key": "alt+e",
+	// 	"when": "editorTextFocus"
+	// },
+	// // #endregion
+
+	// README: info...
+	// #region // * info
+	/*
+	{
+			ctrl+f 				-> open find
+			enter 				-> netx
+			shift+enter   -> previous
+			alt+c 				-> match sensity case
+			alt+w 				-> match whole word
+			alt+r 				-> match as regex
+			ctrl+h 				-> open replace
+			enter  				-> replace
+			ctrl+alt+enter-> replace all
+	}
+	*/
+	// #endregion
+]
